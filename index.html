@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+</head>
+<body>
+
+<header>
+  <div class="menu">
+    <h1>My Portfolio</h1>
+    <div class="hamburger">☰</div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="slider">
+  <img src="../media/slide1.jpg" alt="Image 1">
+  <img src="../media/slide2.jpg" alt="Image 2">
+  <img src="../media/Suitability.jpg" alt="Image 3">
+</div>
+
+<section id="about" class="about">
+  <img src="media/CV_Profile.png" alt="">
+  <h2>Hello,<br>I am <Span style="color: rgb(255, 255, 0);">Pallab Chakraborty!</Span></h2>
+  <p>Cartography | Geospatial Analysis | Remote Sensing Image Analysis |<br>Data Analysis | Geospatial Data Science | WebGIS</p>
+</section>
+
+<section class="skills">
+  <h2 class="section-h2">My Skills</h2>
+  <div class="skills-container">
+    <div class="skill-box">
+      <h3>Cartography</h3>
+      <div class="skill-bar">
+        <h4>Tools</h4>
+        <img src="" alt="">
+      </div>
+    </div>
+    <div class="skill-box">
+      <h3>Geospatial Analysis</h3>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 80%;"></div>
+      </div>
+    </div>
+    <div class="skill-box">
+      <h3>Remote Sensing Image Analysis</h3>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 70%;"></div>
+      </div>
+    </div>
+    <div class="skill-box">
+      <h3>Data Analysis</h3>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 85%;"></div>
+      </div>
+    </div>
+    <div class="skill-box">
+      <h3>Geospatial Data Science</h3>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 75%;"></div>
+      </div>
+    </div>
+    <div class="skill-box">
+      <h3>WebGIS</h3>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 60%;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <h2 class="section-h2" style="width: 100%;">My Projects</h2> 
+
+  <div class="project-box">
+    <h3 style="text-align: center; margin: 4px;">Leaflet Integration</h3>
+    <div id="map" class="map-box"></div>
+  </div>
+
+  <div class="project-box">
+    <img src="media/NDVI.jpg" alt="NDVI Analysis Tool">
+    <div class="project-content">
+      <h3>NDVI Analysis Tool</h3>
+      <p>An innovative tool for analyzing vegetation health using satellite imagery.</p>
+      <a href="project1.html">View Project</a>
+    </div>
+  </div>
+  <div class="project-box">
+    <img src="media/LULC.jpg" alt="Land Use Classification">
+    <div class="project-content">
+      <h3>Land Use Classification</h3>
+      <p>A machine learning-based project to classify land cover types accurately.</p>
+      <a href="project2.html">View Project</a>
+    </div>
+  </div>
+  <div class="project-box">
+    <img src="https://via.placeholder.com/400x200" alt="DEM Visualizer">
+    <div class="project-content">
+      <h3>DEM Visualizer</h3>
+      <p>A 3D visualization tool for analyzing digital elevation models.</p>
+      <a href="project3.html">View Project</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Pallab Chakraborty. All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/2.4.0/Control.FullScreen.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
